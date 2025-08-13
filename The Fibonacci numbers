@@ -1,0 +1,19 @@
+
+
+def fibonacci(n):
+    fib_sequence = []
+    
+    
+    a, b = 0, 1
+    
+    for _ in range(n):
+        fib_sequence.append(a)
+        a, b = b, a + b  # recurrence relation
+    
+    return fib_sequence
+
+
+
+n_terms = 15
+print(f"First {n_terms} Fibonacci numbers:")
+print(fibonacci(n_terms))
